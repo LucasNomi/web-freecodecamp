@@ -14,23 +14,28 @@
     <main>
         <form id="survey-form">
             <fieldset>
-                <label for="name" id="name-label">Name <input type="text" id="name" required
-                                                                    placeholder="Fulano de Tal"></label>
-                <label for="email" id="email-label">Email <input type="email" id="email" required
-                                                                  placeholder="youremail@email.com"></label>
-                <label for="number" id="number-label">Number <input type="number" id="number"
-                                                                     min="1" max="40"></label>
+                <label for="name" id="name-label">Name
+                    <input type="text" id="name" required placeholder="Fulano de Tal">
+                </label>
+                <label for="email" id="email-label">Email
+                    <input type="email" id="email" required placeholder="youremail@email.com">
+                </label>
+                <label for="number" id="number-label">Number
+                    <input type="number" id="number" min="1" max="5">
+                </label>
             </fieldset>
             <fieldset>
-                <label for="dropdown">Select
-                    <select id="dropdown">
-                        <option>select one</option>
-                        <option>1</option>
-                        <option>2</option>
-                    </select>
-                </label>
-                <label for="radio-one"><input type="radio" name="radio" id="radio-one" class="inline"
-                                              checked>Radio One</label>
+                <div id="div-dropdown">
+                    <label for="dropdown">Select
+                        <select id="dropdown">
+                            <option>select one</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </label>
+                </div>
+                <label for="radio-one">
+                    <input type="radio" name="radio" id="radio-one" class="inline" checked>Radio One</label>
                 <label for="radio-two"><input type="radio" name="radio" id="radio-two" class="inline">Radio Two</label>
             </fieldset>
             <fieldset>
@@ -39,7 +44,11 @@
                 <label><input type="checkbox" id="checkbox-three" class="inline" value="3">Checkbox Three</label>
                 <label><input type="checkbox" id="checkbox-four" class="inline" value="4">Checkbox Four</label>
                 <label><input type="checkbox" id="checkbox-five" class="inline" value="5">Checkbox Five</label>
-                <label for="textarea">Other (specify bellow) <textarea id="textarea" cols="30" rows="10"></textarea></label>
+                <div id="div-textarea">
+                    <label for="textarea">Other (specify bellow)
+                        <textarea id="textarea" cols="40" rows="10"></textarea>
+                    </label>
+                </div>
             </fieldset>
             <input type="submit" value="Submit">
         </form>

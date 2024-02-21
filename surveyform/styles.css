@@ -19,11 +19,17 @@ main {
 form {
     background-color: azure;
     border-radius: 5px;
+    padding: 2em 2.65em;
 }
 
 fieldset {
     border: none;
-    padding: 2em 2.65em;
+    border-bottom: solid black;
+    padding: 1em 0 1em 0;
+}
+
+fieldset:last-of-type {
+    margin-bottom: 3em;
 }
 
 label {
@@ -32,10 +38,39 @@ label {
 
 input {
     width: 100%;
-    margin: 1em 0;
+    margin: 0.65em 0 1em 0;
+}
+
+#name,
+#email,
+#number {
+    min-height: 2em;
+}
+
+#div-dropdown {
+    margin-bottom: 1em;
+}
+
+#dropdown {
+    margin-left: 3px;
 }
 
 .inline {
     width: unset;
-    vertical-align: middle;
+    margin: 5px 5px;
+}
+
+#div-textarea {
+    margin: 4px 5px;
+}
+
+textarea {
+    margin-top: 0.3em;
+}
+
+input[type="submit"] {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    min-height: 2.65em;
 }
