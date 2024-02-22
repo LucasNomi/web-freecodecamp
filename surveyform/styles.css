@@ -1,25 +1,38 @@
 body {
     margin: 0;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #e4e4e4;
 }
 
 header {
     text-align: center;
     width: 100%;
+    min-width: 500px;
     margin: 3em 0 2em 0;
     line-height: 1.2em;
 }
 
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+#description {
+    font-size: 1.205em;
+}
+
 main {
-    width: 60vw;
+    width: 60%;
     max-width: 700px;
-    min-width: 400px;
+    min-width: 500px;
     margin: 0 auto;
 }
 
 form {
-    background-color: azure;
+    background-color: #f4f4f4;
     border-radius: 5px;
-    padding: 2em 2.65em;
+    padding: 1em 2.65em;
 }
 
 fieldset {
@@ -29,35 +42,41 @@ fieldset {
 }
 
 fieldset:last-of-type {
-    margin-bottom: 3em;
+    margin-bottom: 2em;
+}
+
+fieldset p {
+    font-size: 1.30rem;
+    margin: 0 0 5px 0;
 }
 
 label {
+    font-size: 1.15rem;
     display: block;
 }
 
-input {
+input,
+#dropdown {
     width: 100%;
-    margin: 0.65em 0 1em 0;
+    margin: 5px 0 20px 0;
+    padding-left: 10px;
 }
 
 #name,
 #email,
-#number {
-    min-height: 2em;
-}
-
-#div-dropdown {
-    margin-bottom: 1em;
-}
-
+#number,
 #dropdown {
-    margin-left: 3px;
+    min-height: 2em;
+    font-size: 1rem;
+}
+
+#number {
+    margin-bottom: 0;
 }
 
 .inline {
     width: unset;
-    margin: 5px 5px;
+    margin: 7px 5px;
 }
 
 #div-textarea {
@@ -65,12 +84,20 @@ input {
 }
 
 textarea {
+    display: block;
     margin-top: 0.3em;
 }
 
 input[type="submit"] {
-    width: 60%;
+    border: black solid 1px;
     display: block;
     margin: 0 auto;
-    min-height: 2.65em;
+    padding: 0.65rem 0;
+    font-size: 1em;
+    background-color: hsl(120,100%,30%);
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: hsl(120,100%,55%);
 }

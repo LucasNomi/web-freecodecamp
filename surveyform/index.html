@@ -3,54 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Form</title>
+    <title>Account Actions</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1 id="title">Survey Form</h1>
-        <p id="description">Description</p>
+        <h1 id="title">ACCOUNT ACTIONS</h1>
+        <p id="description">Archive or terminate your account</p>
     </header>
     <main>
         <form id="survey-form">
             <fieldset>
-                <label for="name" id="name-label">Name
-                    <input type="text" id="name" required placeholder="Fulano de Tal">
+                <label for="name" id="name-label">Username
+                    <input type="text" id="name" required placeholder="Username">
                 </label>
                 <label for="email" id="email-label">Email
                     <input type="email" id="email" required placeholder="youremail@email.com">
                 </label>
-                <label for="number" id="number-label">Number
-                    <input type="number" id="number" min="1" max="5">
+                <label for="number" id="number-label">Days to take action (leave blank for immediate)
+                    <input type="number" id="number" min="7" max="180" placeholder="7">
                 </label>
             </fieldset>
             <fieldset>
                 <div id="div-dropdown">
-                    <label for="dropdown">Select
+                    <label for="dropdown">Action
                         <select id="dropdown">
                             <option>select one</option>
-                            <option>1</option>
-                            <option>2</option>
+                            <option>Archive</option>
+                            <option>Terminate</option>
                         </select>
                     </label>
                 </div>
-                <label for="radio-one">
-                    <input type="radio" name="radio" id="radio-one" class="inline" checked>Radio One</label>
-                <label for="radio-two"><input type="radio" name="radio" id="radio-two" class="inline">Radio Two</label>
+                <label for="backup-radio">
+                    <input type="radio" name="radio" id="backup-radio" class="inline" value="backup" checked>
+                    Back up account content
+                </label>
+                <label for="no-backup-radio"><input type="radio" name="radio" id="no-backup-radio" class="inline" value="no-backup">
+                    DO NOT back up account content
+                </label>
             </fieldset>
             <fieldset>
-                <label><input type="checkbox" id="checkbox-one" class="inline" value="1">Checkbox One</label>
-                <label><input type="checkbox" id="checkbox-two" class="inline" value="2">Checkbox Two</label>
-                <label><input type="checkbox" id="checkbox-three" class="inline" value="3">Checkbox Three</label>
-                <label><input type="checkbox" id="checkbox-four" class="inline" value="4">Checkbox Four</label>
-                <label><input type="checkbox" id="checkbox-five" class="inline" value="5">Checkbox Five</label>
+                <p>Why are you leaving us?</p>
+                <label><input type="checkbox" id="opt-nousingacc" class="inline" value="1">I don't use this account</label>
+                <label><input type="checkbox" id="opt-otheracc" class="inline" value="2">I have other account</label>
+                <label><input type="checkbox" id="opt-unsatisfied" class="inline" value="3">I'm unsatisfied with the service</label>
+                <label><input type="checkbox" id="opt-nousingserv" class="inline" value="4">I don't use the service anymore</label>
                 <div id="div-textarea">
-                    <label for="textarea">Other (specify bellow)
-                        <textarea id="textarea" cols="40" rows="10"></textarea>
+                    <label for="opt-other">Other (specify bellow)
+                        <textarea id="opt-other" cols="40" rows="10"></textarea>
                     </label>
                 </div>
             </fieldset>
-            <input type="submit" value="Submit">
+            <input type="submit" id="submit" value="SUBMIT">
         </form>
     </main>
 </body>
