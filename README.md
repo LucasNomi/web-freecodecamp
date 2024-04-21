@@ -7,4 +7,8 @@ STATUS:
 - [x] Café Menu
 - [x] Set of Colored Markers
 - [x] Registration Form
-- [] Survey Form
+- [x] Survey Form (certification)
+- [x] Rothko
+- [x] Photo Gallery
+- [x] Nutrition Label
+- [] Quiz
