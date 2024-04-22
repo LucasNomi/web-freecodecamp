@@ -11,4 +11,5 @@ STATUS:
 - [x] Rothko
 - [x] Photo Gallery
 - [x] Nutrition Label
-- [] Quiz
+- [x] Quiz
+- [] Tribute Page (certification)
